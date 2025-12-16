@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <center>
+  <h1>Reverse Name</h1>
+  <input type="text" id="name" placeholder="Enter your name">
+  <button onclick="reverseName()">Reverse</button>
+  <p id="result"></p>
+  </center>
+
+  <script>
+    function reverseName() {
+      let name = document.getElementById("name").value;
+      let reversed = name.split("").reverse().join("");
+      document.getElementById("result").innerText = reversed;
+    }
+  </script>
+</body>
+</html>
